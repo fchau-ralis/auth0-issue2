@@ -4,20 +4,13 @@ import { AuthHttpInterceptor } from '@auth0/auth0-angular';
 import { APP_ID, Inject, NgModule, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
-import {
-  BrowserModule,
-  BrowserTransferStateModule,
-} from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 /* Third Party Modules */
-import { Ng5SliderModule } from 'ng5-slider';
 import { NgxSmartModalModule } from 'ngx-smart-modal';
 import { AppRoutingModule } from './app-routing.module';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 /* Components */
 import { AppComponent } from './app.component';
 // Gaurds
-import { AuthGaurd } from './auth.gaurd';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { SiteHeaderComponent } from './components/site-header/site-header.component';
 import { ContactComponent } from './pages/contact/contact.component';
