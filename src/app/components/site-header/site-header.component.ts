@@ -24,12 +24,7 @@ export class SiteHeaderComponent implements OnInit {
     public _router: Router
   ) {}
 
-  public login() {
-    this.auth.loginWithRedirect({
-      appState: { target: '/portal/application' },
-      redirect_uri: `${window.location.origin}/portal/application`,
-    });
-  }
+  public login() {}
 
   public ngOnInit() {
     if (!isPlatformBrowser(this.platformId)) {

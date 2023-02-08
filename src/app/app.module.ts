@@ -49,16 +49,6 @@ import { HelocFaqsComponent } from './pages/heloc-faqs/heloc-faqs.component';
     AuthModule.forRoot({
       domain: `${environment.auth0_domain}`,
       clientId: `${environment.auth0_client_id}`,
-      audience: `${environment.auth0_audience}`,
-      httpInterceptor: {
-        allowedList: [
-          {
-            // Match any request that starts 'https://dev-vii9a6ag.us.auth0.com/api/v2/' (note the asterisk)
-            uri: `${environment.apiUrl}/*`,
-            allowAnonymous: true,
-          },
-        ],
-      },
     }),
     FormsModule,
     NgxSmartModalModule.forRoot(),
